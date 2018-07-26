@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      width: 1290px;
+    }
+
+    table {
+      width: 70%;
+
+    }
+
+    #sketch-holder {
+      width: 34%;
+      text-align: center;
+      margin-top: 5%;
+    }
+
+    .column {
+      width: 29%;
+      text-align: left;
+      margin-top: 2%;
+      margin-right: 4%;
+    }
+
+    .column~.column {
+      margin-left: 4%;
+      margin-right: 0;
+    }
+
+    .footer {
+      text-align: center;
+      width: 100%;
+      margin-top: 2%;
+    }
+
+    code {
+      background-color: #eaeaea;
+      border: #a0a0a0 2px solid;
+      border-radius: 3px;
+      font-size: 20px;
+      margin-right: 10px;
+      width: 29px;
+      height: 29px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <script src="../p5.min.js"></script>
+  <script src="../addons/p5.dom.min.js"></script>
+  <script src="../addons/p5.sound.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
+  <script src="sketch.js"></script>
+  <title>Rothko generator</title>
+</head>
+
+<body>
+  <div class="column">
+    <b>
+      <h2>
+        Mark Rothko
+      </h2>
+    </b>
+    <p>
+      * 1903
+      <br> &#10013; 1970
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veritatis magni tempore nihil omnis dolor, perspiciatis perferendis
+      molestiae inventore nobis eos aliquid tenetur quam velit accusantium dolore. Nihil, similique officia?
+    </p>
+  </div>
+  <div id="sketch-holder" class="columnSketch">
+  </div>
+  <div class="column">
+    <b>
+      <h2>
+        Generate your own Rothko painting
+      </h2>
+    </b>
+    <p>
+      <b>
+        Use your mouse and keyboard to modify your canvas:
+      </b>
+    </p>
+    <p>
+      Move your mouse around to change the colour of the background.
+    </p>
+    <p>
+      <code>
+            Q
+          </code>
+      <code>
+            W
+          </code>
+      <code>
+            E
+          </code>
+      <code>
+            R
+          </code> change layout
+    </p>
+    <p>
+      <code>
+        A
+      </code>
+      <code>
+        S
+      </code>
+      <code>
+        D
+      </code> pick colours for the shapes
+    </p>
+    <p>
+      <code>
+        V
+      </code>
+      <code>
+        B
+      </code> decrease/increase blur
+    </p>
+    <p>
+      <code>
+        F
+      </code>
+      <code>
+        G
+      </code> freeze/unfreeze the canvas
+    </p>
+    </table>
+    <p>
+      Happy with your artwork? You can press the F&nbsp;key to freeze the canvas, right-click it and save it as an image.
+    </p>
+  </div>
+  <div class="footer">
+    <a href="">Tomáš Titěra, 2018</a>
+  </div>
+
+</body>
+
+</html>
